@@ -29,7 +29,8 @@ export default function Home() {
             <div>
               <h1>tiago dantas</h1>
               <h3>desenvolvedor fullstack</h3>
-              <p>Atuo no desenvolvimento web há pouco mais de 5 meses, contribuindo em um projeto Web3 com TypeScript, JavaScript e Chakra UI. No dia a dia, colaboro com uma equipe de 11 dev's, utilizando Git para versionar o código por meio de forks, commits e pull requests. Juntos, criamos novas funcionalidades, mantemos a documentação atualizada e refatoramos o código sempre que necessário. Também estou desenvolvendo um app para controle de finanças, que ainda está no começo, mas tem sido um ótimo espaço para me aprofundar em validações, implementar testes e dar continuidade ao projeto de forma autônoma e prática.</p>
+              <p>Atuo como desenvolvedor fullstack há pouco mais de 5 meses, contribuindo projetos JavaScript, React.js, API Rest e SQL. Sou um profissional apaixonado por programação e resolver problemas, buscando sempre aprimorar meu conhecimento e habilidades nesta área que me encanta. Minha transição de carreira é impulsionada não por uma visão negativa do passado, mas sim pelo desejo de infância da realização de viver/respirar programação por isso me dedico integralmente para atingir esse objetivo. Experiências com gestão de pessoas é um ponto de força que trago comigo nessa jornada. Acredito que a colaboração e a interação são fundamentais para o crescimento profissional, e é por isso que valorizo tanto a troca de conhecimentos e experiências com outras pessoas. Ninguém evolui verdadeiramente sozinho, e estou comprometido em contribuir para uma comunidade de aprendizado mútuo.
+              </p>
             </div>
             <div>
               <button>
@@ -73,9 +74,48 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section>
+          <h3>Projetos</h3>
+          <div>
+            <h3>front-end</h3>
+            <div>
+              <div>
+
+              </div>
+              <div>
+
+              </div>
+              <div>
+
+              </div>
+              <div>
+
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>back-end</h3>
+            <div>
+
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
-
+        <section>
+          <h3>Contato</h3>
+          <div>
+            <a href="mailto:tdantas@tigocode.com.br" target="_blank">
+              <span>Email:</span>
+              <p>TDantas@tigocode.com.br</p>
+            </a>
+            <a href="tel:5511977377688" target="_blank">
+              <span>Telefone:</span>
+              <p>(011) 9 7737-7688</p>
+            </a>
+          </div>
+          <div>Copyright © 2024 | Tiago Dantas</div>
+        </section>
       </footer>
     </div>
   );
