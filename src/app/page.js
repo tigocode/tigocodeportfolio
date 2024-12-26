@@ -1,46 +1,52 @@
 import styles from "./page.module.css";
 import { FaLightbulb, FaRegLightbulb, FaFileDownload } from "react-icons/fa";
 import Image from "next/image";
+import AgenciaDigital from '../../public/assets/agenciaDigital.png';
+import BarbeShop from '../../public/assets/barberShop.png';
+import Cardapio from '../../public/assets/cardapio.png';
+import ErConsultoria from '../../public/assets/erConsultoria.png';
+import Perfil from '../../public/assets/Perfil.jpg';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <header>
-        <div>
+    <div>
+      <header className={styles.topo}>
+        <div className={styles.logo}>
           <p>
-            tigocode
+            tigo<span>code</span>
           </p>
         </div>
-        <nav>
-          <a href="">sobre</a>
-          <a href="">habilidades</a>
-          <a href="">projetos</a>
+        <nav className={styles.guia}>
+          <a href="#sobre">sobre</a>
+          <a href="#habilidades">habilidades</a>
+          <a href="#projetos">projetos</a>
           <button>
-            <FaLightbulb />
+            <FaLightbulb className={styles.icon_light} />
           </button>
         </nav>
       </header>
-      <main>
-        <section>
-          <div>
-            <Image />
+      <div className={styles.line}></div>
+      <main className={styles.container}>
+        <section id="sobre" className={styles.sobre}>
+          <div className={styles.perfil}>
+            <Image src={Perfil} className={styles.image} />
           </div>
-          <div>
-            <div>
+          <div className={styles.content_sobre}>
+            <div className={styles.content}>
               <h1>tiago dantas</h1>
               <h3>desenvolvedor fullstack</h3>
-              <p>Atuo como desenvolvedor fullstack há pouco mais de 5 meses, contribuindo projetos JavaScript, React.js, API Rest e SQL. Sou um profissional apaixonado por programação e resolver problemas, buscando sempre aprimorar meu conhecimento e habilidades nesta área que me encanta. Minha transição de carreira é impulsionada não por uma visão negativa do passado, mas sim pelo desejo de infância da realização de viver/respirar programação por isso me dedico integralmente para atingir esse objetivo. Experiências com gestão de pessoas é um ponto de força que trago comigo nessa jornada. Acredito que a colaboração e a interação são fundamentais para o crescimento profissional, e é por isso que valorizo tanto a troca de conhecimentos e experiências com outras pessoas. Ninguém evolui verdadeiramente sozinho, e estou comprometido em contribuir para uma comunidade de aprendizado mútuo.
+              <p>Atuo como desenvolvedor fullstack há pouco mais de 9 meses, contribuindo projetos JavaScript, React.js, API Rest e SQL. Sou um profissional apaixonado por programação e resolver problemas, buscando sempre aprimorar meu conhecimento e habilidades nesta área que me encanta. Minha transição de carreira é impulsionada não por uma visão negativa do passado, mas sim pelo desejo de infância da realização de viver/respirar programação por isso me dedico integralmente para atingir esse objetivo. Experiências com gestão de pessoas é um ponto de força que trago comigo nessa jornada. Acredito que a colaboração e a interação são fundamentais para o crescimento profissional, e é por isso que valorizo tanto a troca de conhecimentos e experiências com outras pessoas. Ninguém evolui verdadeiramente sozinho, e estou comprometido em contribuir para uma comunidade de aprendizado mútuo.
               </p>
             </div>
-            <div>
-              <button>
+            <div className={styles.box_dow}>
+              <a href="https://drive.google.com/file/d/1iOm_na3pmK9pvRLxvRza7Z-6jjcrlnf8/view?usp=sharing" target="_blank">
                 <p>ver currículo</p>
-                <FaFileDownload />
-              </button>
+                <FaFileDownload className={styles.icon_dow} />
+              </a>
             </div>
           </div>
         </section>
-        <section>
+        <section className={styles.container_skills}>
           <div>
             <h2>hard skills</h2>
             <div>
@@ -65,12 +71,12 @@ export default function Home() {
           <div>
             <h2>soft Skills</h2>
             <div>
-              <spa>capacidade analítica</spa>
-              <spa>experiência como liderança</spa>
-              <spa>paixão por resolver problemas</spa>
-              <spa>proatividade</spa>
-              <spa>flexibilidade</spa>
-              <spa>comunicação</spa>
+              <span>capacidade analítica</span>
+              <span>experiência como liderança</span>
+              <span>paixão por resolver problemas</span>
+              <span>proatividade</span>
+              <span>flexibilidade</span>
+              <span>comunicação</span>
             </div>
           </div>
         </section>
@@ -80,16 +86,16 @@ export default function Home() {
             <h3>front-end</h3>
             <div>
               <div>
-
+                <Image src={AgenciaDigital} />
               </div>
               <div>
-
+                <Image src={BarbeShop} />
               </div>
               <div>
-
+                <Image src={Cardapio} />
               </div>
               <div>
-
+                <Image src={ErConsultoria} />
               </div>
             </div>
           </div>
