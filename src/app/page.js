@@ -47,36 +47,38 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.container_skills}>
-          <div>
-            <h2>hard skills</h2>
-            <div>
-              <div>
+          <div className={styles.box_skills}>
+            <h2>hard <span>skills</span></h2>
+            <div className={styles.box}>
+              <div className={styles.box_front_back}>
                 <h3>front-end</h3>
-                <div>
-                  <span>react.js</span>
-                  <span>html5</span>
-                  <span>css3</span>
+                <div className={styles.skills_boxs}>
+                  <span className={styles.react}>react.js</span>
+                  <span className={styles.html}>html5</span>
+                  <span className={styles.css}>CSS3</span>
                 </div>
               </div>
-              <div>
+              <div className={styles.box_front_back}>
                 <h3>back-end</h3>
-                <div>
-                  <span>node.js</span>
-                  <span>api rest</span>
-                  <span>sql</span>
+                <div className={styles.skills_boxs}>
+                  <span className={styles.node}>node.js</span>
+                  <span className={styles.api}>API Rest</span>
+                  <span className={styles.sql}>SQL</span>
                 </div>
               </div>
             </div>
           </div>
-          <div>
-            <h2>soft Skills</h2>
-            <div>
-              <span>capacidade analítica</span>
-              <span>experiência como liderança</span>
-              <span>paixão por resolver problemas</span>
-              <span>proatividade</span>
-              <span>flexibilidade</span>
-              <span>comunicação</span>
+          <div className={styles.box_skills}>
+            <h2>soft <span>skills</span></h2>
+            <div className={styles.box_front_back}>
+              <div className={styles.box_soft}>
+                <span>capacidade analítica</span>
+                <span>proatividade</span>
+                <span>experiência como liderança</span>
+                <span>paixão por resolver problemas</span>        
+                <span>flexibilidade</span>
+                <span>comunicação</span>
+              </div>
             </div>
           </div>
         </section>

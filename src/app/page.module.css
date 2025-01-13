@@ -176,3 +176,134 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.container_skills::before {
+  content: '';
+  width: 650px;
+  height: 8px;
+  background: #F25041;
+  position: absolute;
+  bottom: -20px;
+  left: 100px;
+}
+.container_skills::after {
+  content: '';
+  width: 650px;
+  height: 8px;
+  background: #2ABF4F;
+  position: absolute;
+  bottom: -20px;
+  right: 60px;
+}
+.box_skills {
+  width: 40%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.box_skills h2 {
+  text-transform: uppercase;
+  color: #3B8FD9;
+  font-weight: 800;
+  font-size: 32px;
+  padding: 10px;
+}
+.box_skills h2::first-letter {
+  font-size: 42px;
+}
+.box_skills h2 span {
+  color: #F25041;
+  font-size: 17px;
+  font-weight: 600;
+}
+.box {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box_front_back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.box_front_back h3 {
+  color:#212531;
+  font-weight: 800;
+  font-size: 28px;
+  background: none;;
+}
+.box_front_back h3::first-letter {
+  text-transform: uppercase;
+}
+.skills_boxs {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 20px;
+  background: none;
+}
+.box_soft {
+  width: 500px;
+  height: 275px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+.skills_boxs span {
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  color: #F0F1F2;
+  border-radius: 5px;
+}
+.box_soft span {
+  width: 45%;
+  text-align: center;
+  background: none;
+  font-size: 20px;
+  color: #2B3040;
+  font-weight: 800;
+}
+.skills_boxs span::first-letter,
+.box_soft span::first-letter {
+  text-transform: uppercase;
+}
+.react {
+  background: linear-gradient(45deg, #61dafb, #21a1f1);
+}
+
+.html {
+  background: linear-gradient(45deg, #e44d26, #f16529);
+}
+
+.css {
+  background: linear-gradient(45deg, #264de4, #2965f1);
+}
+
+.node {
+  background: linear-gradient(45deg, #68a063, #3c873a);
+}
+
+.api {
+  background: linear-gradient(45deg, #6c63ff, #3f3d56);
+}
+
+.sql {
+  background: linear-gradient(45deg, #f29111, #d37200);
+}
